@@ -1,0 +1,14 @@
+.git
+**/__pycache__
+**/*.pyc
+dist
+build
+outputs
+*.partial
+
+snapshots/
+data/
+results/
+outputs/
+.git/
+__pycache__/

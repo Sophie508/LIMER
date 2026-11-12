@@ -1,0 +1,184 @@
+{
+  "schema": "limer-public-verification-v1",
+  "public_files_checked": 6963,
+  "internal_symlinks_checked": 5,
+  "campaigns": [
+    {
+      "directory": "data/gate/evidence-v1/pilot-v1",
+      "counts": {
+        "registered": 20,
+        "unrun": 18,
+        "attempted": 2,
+        "valid": 1,
+        "completed": 1,
+        "invalid": 1
+      },
+      "source": {
+        "checked": 3812,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/gate/evidence-v1/confirmation-v1",
+      "counts": {
+        "registered": 30,
+        "unrun": 30
+      },
+      "source": {
+        "checked": 3812,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/gate/evidence/confirmation-v2",
+      "counts": {
+        "registered": 30,
+        "attempted": 30,
+        "valid": 29,
+        "completed": 27,
+        "invalid": 1,
+        "unfinished": 2
+      },
+      "source": {
+        "checked": 3812,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/gate/evidence/pilot-v2",
+      "counts": {
+        "registered": 20,
+        "attempted": 20,
+        "valid": 20,
+        "completed": 20
+      },
+      "source": {
+        "checked": 3812,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/gate/evidence-terminal-fix/confirmation-terminal-fix",
+      "counts": {
+        "registered": 30,
+        "attempted": 10,
+        "valid": 10,
+        "completed": 10,
+        "unrun": 20
+      },
+      "source": {
+        "checked": 3812,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/throughput/evidence/policy-pilot-v2",
+      "counts": {
+        "registered": 2,
+        "attempted": 2,
+        "valid": 2,
+        "completed": 2
+      },
+      "source": {
+        "checked": 56,
+        "descriptive_tool_redactions": 1,
+        "native_build_source": {
+          "checked": 3812,
+          "descriptive_tool_redactions": 0
+        }
+      }
+    },
+    {
+      "directory": "data/throughput/evidence/full-v2",
+      "counts": {
+        "registered": 7,
+        "attempted": 7,
+        "valid": 7,
+        "completed": 7
+      },
+      "source": {
+        "checked": 56,
+        "descriptive_tool_redactions": 1,
+        "native_build_source": {
+          "checked": 3812,
+          "descriptive_tool_redactions": 0
+        }
+      }
+    },
+    {
+      "directory": "data/throughput/evidence/pilot-v1",
+      "counts": {
+        "registered": 12,
+        "attempted": 12,
+        "valid": 12,
+        "completed": 11,
+        "unfinished": 1
+      },
+      "source": {
+        "checked": 56,
+        "descriptive_tool_redactions": 1,
+        "native_build_source": {
+          "checked": 3812,
+          "descriptive_tool_redactions": 0
+        }
+      }
+    },
+    {
+      "directory": "data/throughput/evidence/pilot-v2",
+      "counts": {
+        "registered": 3,
+        "attempted": 3,
+        "valid": 3,
+        "completed": 3
+      },
+      "source": {
+        "checked": 56,
+        "descriptive_tool_redactions": 1,
+        "native_build_source": {
+          "checked": 3812,
+          "descriptive_tool_redactions": 0
+        }
+      }
+    },
+    {
+      "directory": "data/detection/validation-v2",
+      "counts": {
+        "registered": 580,
+        "valid": 580,
+        "invalid": 0
+      },
+      "source": {
+        "checked": 3766,
+        "descriptive_tool_redactions": 0
+      }
+    },
+    {
+      "directory": "data/detection/validation-loss-independent-v4",
+      "counts": {
+        "registered": 60,
+        "valid": 60,
+        "invalid": 0
+      },
+      "source": {
+        "checked": 3766,
+        "descriptive_tool_redactions": 0
+      }
+    }
+  ],
+  "failed_detector_history": {
+    "registered": 580,
+    "valid": 530,
+    "invalid": 50
+  },
+  "repaired_50_percent_capacity_misses": 4,
+  "repair_locality": {
+    "selected_runs": 10,
+    "unchanged_precompletion": true,
+    "final_phase_releases_verified": true,
+    "native_changed_files": [
+      "src/simulator/recovery/proxy.h",
+      "src/simulator/runtime/completion.h"
+    ]
+  },
+  "scope": "Public integrity, source identities and compact result derivation; no native runs or raw archive replay."
+}
