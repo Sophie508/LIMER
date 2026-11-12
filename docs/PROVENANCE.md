@@ -23,7 +23,9 @@ terminal regression's reference-directory lookup was adapted to the bundled
 `snapshots/gate-original` location. No detector, policy, transport, capacity or
 fault-injection algorithm was changed for public packaging.
 
-Reader-facing documentation, ignore rules and the public verifier are new.
+Platform labels in current public descriptions, report text and plan descriptions
+use simulation terminology. Reader-facing documentation, ignore rules and the
+public verifier are new.
 The original development worktree and original evidence remain unchanged.
 
 ## Hash meanings and verification scope

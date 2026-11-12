@@ -77,7 +77,7 @@ def make_plan(preset='pilot'):
                 confirmation_rule='The confirmation preset and its seed are frozen before pilot outcomes. Any source fix after seeing confirmation results requires a new separately labelled campaign.',
                 frozen_seed_roles=deepcopy(SEEDS),
                 scoring=dict(primary_conditions=list(PRIMARY),
-                             scope='Finite CPU simulation with 16 logical GPUs and four scheduler phases; no hardware or population coverage claim.'),
+                             scope='Finite simulation with 16 logical GPUs and four scheduler phases; no hardware or population coverage claim.'),
                 metrics=dict(primary='Whole-job communication completion time, candidate minus each matched comparator',
                              throughput='Matched healthy time / fault time for identical useful payload; whole-job useful throughput, not instantaneous link capacity',
                              detection='All affected paths strictly below 100 ms; retain late, missed, pre-fault, unaffected and healthy alarms',

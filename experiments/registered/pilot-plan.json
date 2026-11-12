@@ -641,7 +641,7 @@
       "sustained_25_late",
       "transient_25_20ms"
     ],
-    "scope": "Finite CPU simulation with 16 logical GPUs and four scheduler phases; no hardware or population coverage claim."
+    "scope": "Finite simulation with 16 logical GPUs and four scheduler phases; no hardware or population coverage claim."
   },
   "metrics": {
     "primary": "Whole-job communication completion time, candidate minus each matched comparator",

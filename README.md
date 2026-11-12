@@ -1,6 +1,6 @@
 # LIMER
 
-**Gray-fault detection and adaptive communication recovery in a CPU network simulator.**
+**Gray-fault detection and adaptive communication recovery through network simulation.**
 
 LIMER studies a sender using two active network paths. When one path continues
 to deliver data but becomes unreliable or slow, the system detects the degraded

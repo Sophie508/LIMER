@@ -33,7 +33,7 @@ def report(directory):
     write_json(root / 'summary.json', summary)
     text = ['# LIMER experiment results', '',
             f"Verified {len(results)}/{len(rows)} cases. Completed tasks: {summary['completed']}; observation limit: {summary['observation_limit']}.", '',
-            'Times below are simulated communication times, not CPU wall time. Observation limits are not successful completions.', '',
+            'Times below are simulated communication times.', '',
             '| Case | Method | Status | Communication ms | New B-prime chunks | Post-replacement phase ms |',
             '| --- | --- | --- | ---: | ---: | ---: |']
     for r in rows:

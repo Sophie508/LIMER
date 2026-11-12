@@ -61,7 +61,7 @@ docker run --rm -v "$PWD/outputs:/work" limer:assessment \
   --relay-completion pipelined --helper-mode shared
 ```
 
-The image is a CPU simulator environment. Its entry point is `limer.py`.
+The image provides the simulation environment. Its entry point is `limer.py`.
 Local unit checks run directly from the clone because the Docker build context
 excludes historical snapshots needed by the negative-control tests.
 

@@ -1,12 +1,12 @@
 # Current limitations
 
-- This is CPU network simulation of logical GPU communication. Numerical tensor
+- This is network simulation of logical GPU communication. Numerical tensor
   reduction, GPU/HBM activity, computation overlap and physical hardware are not
   validated. Phase/chunk accounting is the implemented correctness boundary.
 - The first 20 ms are assumed suitable for healthy calibration. Startup faults,
   arbitrary background congestion and timestamp noise are not qualified.
 - Endpoint events and receiver summaries feed a shared detector with ideal
-  simulated timestamps. Raw observation/summary exchange and CPU processing
+  simulated timestamps. Raw observation/summary exchange and observation processing
   latency are not independently modeled. Alarm, probe, report and recovery
   control transport are charged.
 - The fixed topology has 16 logical GPUs and modeled 10-Gb/s access links.

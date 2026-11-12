@@ -271,7 +271,8 @@
     "python/limerlab/report.py": {
       "upstream_path": "versions/2026-11-12-gray-gate/project-terminal-fix/python/limerlab/report.py",
       "original_sha256": "c6e29cc818ecf29b95b5708bac1918b8c516b678dd1e107c0e4f81cbceac9dfe",
-      "metadata_redacted": false
+      "metadata_redacted": false,
+      "presentation_edited": true
     },
     "python/limerlab/runner.py": {
       "upstream_path": "versions/2026-11-12-gray-gate/project-terminal-fix/python/limerlab/runner.py",
@@ -551,7 +552,8 @@
     "tools/gray_gate_campaign.py": {
       "upstream_path": "versions/2026-11-12-gray-gate/project-terminal-fix/tools/gray_gate_campaign.py",
       "original_sha256": "5b013b4f8f9e5d0e309cc0bc0e6f51a7844477cce230ce2dd4cb6ba0bbe604ed",
-      "metadata_redacted": false
+      "metadata_redacted": false,
+      "presentation_edited": true
     },
     "tools/integration_campaign.py": {
       "upstream_path": "versions/2026-11-12-gray-gate/project-terminal-fix/tools/integration_campaign.py",
@@ -34846,17 +34848,23 @@
     "experiments/registered/pilot-plan.json": {
       "upstream_path": "versions/2026-11-12-gray-gate/research/pilot-plan.json",
       "original_sha256": "30b18a67ee6f5d4ce71a7361c2832ccb6efb659343721025ea9776b0a0fb25d4",
-      "metadata_redacted": false
+      "metadata_redacted": false,
+      "presentation_edited": true
     },
     "experiments/registered/confirmation-plan.json": {
       "upstream_path": "versions/2026-11-12-gray-gate/research/confirmation-plan.json",
       "original_sha256": "8cb2f03132879e674cac8f84949b4b66f7f51e66b9499b61086f9168ffc8daa7",
-      "metadata_redacted": false
+      "metadata_redacted": false,
+      "presentation_edited": true
     }
   },
   "packaging_changes": {
     "tests/test_terminal_lease_cleanup.py": "Reference lookup uses bundled snapshots/gate-original; test cases and native callbacks unchanged.",
     ".dockerignore": "Exclude historical evidence/snapshots and output caches from the current-source build context.",
-    ".gitignore": "Exclude development caches and output directories from the public release."
+    ".gitignore": "Exclude development caches and output directories from the public release.",
+    "tools/gray_gate_campaign.py": "Use simulation terminology in generated plan descriptions; cases and numeric settings unchanged.",
+    "python/limerlab/report.py": "State the simulated communication-time metric directly in report text.",
+    "experiments/registered/pilot-plan.json": "Simplify platform terminology in descriptive metadata; conditions and numeric settings unchanged.",
+    "experiments/registered/confirmation-plan.json": "Simplify platform terminology in descriptive metadata; conditions and numeric settings unchanged."
   }
 }
