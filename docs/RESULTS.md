@@ -5,7 +5,7 @@ as detection delay. The simulator does not execute numerical gradient reduction.
 The machine-readable records under `data/` retain unfavorable and unfinished
 outcomes. [Verification scope](PROVENANCE.md) explains the public export.
 
-## Detection in the historical registered conditions
+## RDMA endpoint detection in the registered conditions
 
 | Condition | All affected directions correct below 100 ms | P95 detection ms |
 | --- | ---: | ---: |

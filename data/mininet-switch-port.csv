@@ -1,0 +1,7 @@
+run_id,scenario_id,fault_interface,detector_interface,switch_triggered,l_switch_ms,host_action,recovery_committed,changed_slot_count
+aa3_local_rep01,AA3_LOCAL,w2-eth0,sA-eth3,True,2777.168719,confirm,True,3
+aa3_local_rep02,AA3_LOCAL,w2-eth0,sA-eth3,True,2775.010637,confirm,True,3
+aa3_local_rep03,AA3_LOCAL,w2-eth0,sA-eth3,True,2777.131699,confirm,True,3
+aa5_transient_rep01,AA5_TRANSIENT,w2-eth0,sA-eth3,True,877.04783,suppress,False,0
+aa5_transient_rep02,AA5_TRANSIENT,w2-eth0,sA-eth3,True,875.836024,suppress,False,0
+aa5_transient_rep03,AA5_TRANSIENT,w2-eth0,sA-eth3,True,877.121781,suppress,False,0

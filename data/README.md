@@ -28,3 +28,11 @@ deterministic repetitions into an independent detection sample.
 
 Registrations and raw-audit receipts are historical records. To create new
 measurements, use new output directories and the matched source snapshot.
+
+The six rows in [mininet-switch-port.csv](mininet-switch-port.csv) are all
+formal AA3_LOCAL and AA5_TRANSIENT repeats from the four-worker active-active
+v1 emulation. They preserve the selected columns of
+`LIMER_draft/results_active_active/summary.csv` at commit
+`1447bc48689802662f0571feaf0d3e03cace1475`. `l_switch_ms` measures elapsed
+wall time from injection to switch-port suspicion. Host confirmation and
+recovery commitment are separate outcomes. The RDMA tables use simulated time.

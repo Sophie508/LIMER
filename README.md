@@ -8,6 +8,12 @@ service, adjusts chunk allocation, and can borrow other GPUs' network paths to
 relay unfinished and subsequent data. A benefit gate estimates
 whether opening that relay is worthwhile for the remaining communication.
 
+In the RDMA experiments, the detector observes the communication endpoints.
+The switches forward packets, and the controller receives the path alarm.
+An earlier Mininet prototype used switch-port counters to trigger host
+confirmation. [Detector placement and evidence](docs/SYSTEM.md#detector-placement)
+describes both implementations.
+
 This repository is a self-contained assessment release. It includes the network
 backend, source, tests, registered experiment conditions and compact results.
 

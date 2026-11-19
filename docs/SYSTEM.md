@@ -31,6 +31,27 @@ it is not a free backup link and does not repair the original B link.
 Direct recovery still requires a validated route and coordination. It simply
 does not apply the benefit gate's additional profitability rejection.
 
+## Detector placement
+
+In the RDMA simulation the sender supplies canary completion, retransmission
+and acknowledgment progress. The receiver supplies packet spacing. The service
+detector names a directed sender–destination path and plane. The switches
+forward traffic. The controller receives the alarm and manages helper selection
+and activation. The detector has no switch-counter input or failing-hop output.
+See the [RDMA callbacks](../src/simulator/transport/rdma.h),
+[receiver sampling](../src/simulator/detection/spacing.h) and
+[alarm decision and delivery](../src/simulator/detection/monitor.h).
+
+The earlier four-worker Mininet prototype used the receive-byte counter on
+the switch port facing worker 2 on plane A. A management process polled that
+port and raised a suspicion. The host checked the round duration and alternate
+plane before authorizing recovery. In three persistent 100-to-20 Mb/s rate caps,
+all three suspicions led to a localized route change. Median time to suspicion
+was 2.78 s. In three 100-ms caps the host suppressed all three suspicions.
+The counter was read on `sA-eth3`, across the link from the injection point
+on `w2-eth0`. The rule executed in the management process. The
+[archived run rows](../data/mininet-switch-port.csv) record both decisions.
+
 ## Detection signals
 
 The detector uses observed transport events and receiver samples, never the
